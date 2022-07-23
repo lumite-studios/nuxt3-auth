@@ -3,7 +3,7 @@
 **Important Note:** This was built specifically for my own personal project and I cannot confirm if this will work for *any/every* project. Some changes may be necessary.
 
 ## Laravel API Server
-1. Laravel Sanctum needs to be added to the build set the csrf cookie and handle the API tokens.
+1. Laravel Sanctum needs to be added to the build to set the csrf cookie and handle the API tokens.
 2. The login route should return an API token created with something like `user()->createToken(...)`.
 3. The auth route should return the authenticated user `auth()->guard('sanctum')->user()`.
 
