@@ -3,12 +3,13 @@
 **Important Note:** This was built specifically for my own personal project and I cannot confirm if this will work for *any/every* project. Some changes may be necessary.
 
 ## Middleware
-By default, all pages require auth. A page can be set for a guest by setting the auth variable in page meta to false. If you would like to "switch" this functionality, update the `true` default in the auth global middleware to `false`.
+By default, all pages require auth. A page can be set for a guest by setting the auth variable in page meta to false. If you would like to "switch" this functionality, update the `true` default in the middleware itself to `false`.
 ```js
 definePageMeta({
     auth: false
 })
 ```
+You may also need to update the middleware navigation routes. It defaults to a guest is redirected to `/` and an authenticated user is redirected to `/dashboard`.
 
 ## Layouts
 It's recommended in the layout to check if auth is currently attempting a login before showing, to ensure the user object in the store is properly set.
