@@ -1,5 +1,7 @@
 # Laravel Sanctum Auth (API Tokens) for Nuxt 3
 
+**Important Note:** This was built specifically for my own personal project and I cannot confirm if this will work for *any/every* project. Some changes may be necessary.
+
 ## Middleware
 By default, all pages require auth. A page can be set for a guest by setting the auth variable in page meta to false. If you would like to "switch" this functionality, update the `true` default in the auth global middleware to `false`.
 ```js
